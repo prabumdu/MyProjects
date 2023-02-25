@@ -1,0 +1,19 @@
+<html>
+<script>
+function checkpalindrome(string)
+{
+const len=String.length
+for(let i=0;i<len/2;i++)
+{
+if(String[i]!==String[len-1-i])
+{
+return "it is not a palindrome";
+}
+}
+return "it is a palindrome";
+}
+const string=prompt("Enter a String:");
+const value=checkpalindrome(String);
+alert(value);
+</script>
+</html>
